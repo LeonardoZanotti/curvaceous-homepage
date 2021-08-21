@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curvaceous homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            background-color: #202731;
+            overflow-x: hidden;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #3c31dd;
+        }
+
+        .red {
+            background: #dd3f31;
+        }
+
+        .pink {
+            background: #ff0066;
+        }
+
+        .dark {
+            background: #0f0f10;
+        }
+
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #202731;
+            transform: translate(85%, 60%);
+        }
+
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #3c31dd;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+
+        .bubble::after {
+            content: '';
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: #0f0f10;
+            z-index: -1;
+        }
+
+        .custom-shape-divider-top-1629569157 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-top-1629569157 svg {
+            position: relative;
+            display: block;
+            width: calc(119% + 1.3px);
+            height: 301px;
+        }
+
+        .custom-shape-divider-top-1629569157 .shape-fill {
+            fill: #0F0F10;
+        }
+
+        .spacer {
+            aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .haikei-layer-1 {
+            background-image: url('./layered-waves-haikei-1.svg');
+        }
+
+        .haikei-layer-2 {
+            background-image: url('./layered-waves-haikei-2.svg');
+        }
+
+        .haikei-layer-3 {
+            background-image: url('./layered-waves-haikei-3.svg');
+        }
+    </style>
+</head>
+
+<body>
+    <section class="blue">
+        <h1>Nice curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus ad voluptatum corrupti, commodi
+            dolorum assumenda sunt reiciendis deleniti ducimus! Laborum, labore! Laboriosam pariatur quisquam doloremque
+            incidunt, nihil vel nisi!</p>
+        <div class="curve"></div>
+    </section>
+    <section>
+        <h1>Nice curves</h1>
+        <p>Vero porro corrupti nulla sint reiciendis unde, animi ut laborum aliquam dolor. Quod quam ea, ipsam velit
+            debitis sequi dicta autem ratione voluptatibus, delectus assumenda tempore aliquam similique, voluptates a?
+        </p>
+    </section>
+    <section class="bubble">
+        <h1>Nice curves</h1>
+        <p>Minima, odit debitis sapiente aliquid nostrum itaque. Ab veritatis optio eligendi voluptate corrupti iste,
+            explicabo sed laborum adipisci dolor amet eos, delectus officiis, reprehenderit minima beatae voluptatibus
+            libero asperiores eius.</p>
+    </section>
+    <section class="dark">
+        <h1>Nice curves</h1>
+        <p>Eligendi excepturi exercitationem repellendus ipsam, unde odio error nisi perferendis quisquam? Natus, odio.
+            Laudantium perferendis fugiat facere atque quidem distinctio molestiae. Fuga fugiat, expedita vitae illum
+            ipsum nostrum modi nobis!</p>
+    </section>
+    <!-- https://www.shapedivider.app -->
+    <section class="red">
+        <h1>Nice curves</h1>
+        <p>Debitis totam deserunt voluptates optio odio necessitatibus vitae aut temporibus unde. Ea suscipit, deleniti
+            repudiandae nisi repellendus aperiam saepe excepturi facere dignissimos, a harum, quibusdam sint rem eum
+            cumque commodi!</p>
+        <div class="custom-shape-divider-top-1629569157">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <!-- https://app.haikei.app -->
+    <div class="spacer haikei-layer-1"></div>
+    <section>
+        <h1>Nice curves</h1>
+        <p>Aperiam ullam architecto vel, autem obcaecati sed, odio, eveniet ipsa possimus distinctio accusamus. Omnis
+            culpa nobis nesciunt modi cupiditate tempora quam, ducimus repudiandae est voluptatibus, laudantium possimus
+            ipsum pariatur animi!</p>
+    </section>
+    <div class="spacer haikei-layer-2"></div>
+    <section class="pink">
+        <h1>Nice curves</h1>
+        <p>Accusamus et laboriosam qui fugiat recusandae sapiente excepturi quam explicabo voluptatum atque error est
+            dolore optio, corporis delectus fugit hic. Illo animi voluptas eaque minima iure ex, impedit sed quo!</p>
+
+        <svg id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(471.5668498787899 143.3740784214538)">
+                <path id="blob1"
+                    d="M64.8 -66.6C84.8 -44.8 102.4 -22.4 100 -2.4C97.7 17.7 75.4 35.4 55.4 60.4C35.4 85.4 17.7 117.7 -3.5 121.2C-24.7 124.7 -49.5 99.5 -64.7 74.5C-79.8 49.5 -85.4 24.7 -82.7 2.7C-80 -19.3 -69 -38.7 -53.8 -60.5C-38.7 -82.3 -19.3 -106.7 1.5 -108.2C22.4 -109.7 44.8 -88.5 64.8 -66.6"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(488.74017289634907 167.39488856551725)" style="visibility: hidden;">
+                <path id="blob2"
+                    d="M62 -62.5C84.8 -39.1 110.9 -19.6 113.4 2.5C115.8 24.5 94.7 49 71.9 61.5C49 74 24.5 74.5 -3.9 78.4C-32.3 82.3 -64.6 89.6 -89.6 77.1C-114.6 64.6 -132.3 32.3 -131 1.3C-129.7 -29.7 -109.4 -59.4 -84.4 -82.7C-59.4 -106.1 -29.7 -123 -5.1 -118C19.6 -112.9 39.1 -85.8 62 -62.5"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            );
+            tween.start();
+        </script>
+    </section>
+    <div class="spacer haikei-layer-3"></div>
+    <section>
+        <h1>Nice curves</h1>
+        <p>Laboriosam itaque quas totam magnam earum veniam nisi natus tempore temporibus sequi dolor, vero maiores
+            doloremque aperiam eveniet. Non, nesciunt rem facilis corporis laudantium aperiam odio aliquam ex eaque in?
+        </p>
+    </section>
+</body>
+
+</html>
